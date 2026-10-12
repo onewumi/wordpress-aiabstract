@@ -1,0 +1,308 @@
+# Copyright (C) 2025 我的日志 & 李的日志
+# This file is distributed under the same license as the AIAbstract plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: AIAbstract 1.8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-07 12:00+0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: ai-abstract.php:7
+msgid "AIAbstract"
+msgstr ""
+
+#: ai-abstract.php:8
+msgid "AI 文章摘要生成插件，支持多种 AI 服务接口"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:128
+msgid "AI 服务配置"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:129
+msgid "配置 AI 摘要插件的基本设置。"
+msgstr ""
+
+msgid "API 地址（自定义API）"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:175
+msgid "例如：讯飞星火或百度千帆的兼容API地址。"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:183
+msgid "API Key（自定义API）"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:188
+msgid "填写AI服务的API Key。"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:196
+msgid "模型名称（自定义API）"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:201
+msgid "例如：讯飞星火模型：x1，百度千帆模型：ernie-speed-8k。"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:209
+msgid "摘要字数上限"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:214
+msgid "此字数将作为AI模型生成摘要的参考上限。"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:222
+msgid "自定义 AI 提示词模板"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:228
+msgid "在此处输入您想要发送给AI模型的提示词。请使用以下占位符：{abstractLength}, {title}, {content}"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:236
+msgid "模板样式"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:243
+msgid "默认模板"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:245
+msgid "简古风"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:247
+msgid "高斯动态"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:249
+msgid "炫酷动态"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:257
+msgid "自定义摘要HTML模板"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:277
+msgid "此选项在\"模板样式\"选择\"默认模板\"时生效。使用 {abstract} 作为摘要内容的占位符。"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:285
+msgid "调试模式"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:292
+msgid "启用"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:294
+msgid "禁用"
+msgstr ""
+
+#: includes/class-aiabstract-core.php:296
+msgid "启用后将在页面底部显示调试信息。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:68
+msgid "AI摘要设置"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:69
+msgid "AI摘要"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:77
+msgid "AI摘要管理"
+msgstr ""
+
+#: templates/template1.php:15
+#: templates/template2.php:15
+#: templates/template3.php:15
+msgid "AI摘要"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:345
+msgid "摘要列表"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:356
+msgid "按文章标题搜索..."
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:357
+msgid "搜索"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:360
+msgid "清除搜索"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:364
+msgid "删除日志"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:368
+msgid "一键生成所有摘要"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:377
+msgid "未找到匹配的文章"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:379
+msgid "暂无数据"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:385
+msgid "没有找到标题包含\"%s\"的文章摘要。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:387
+msgid "目前缓存文件中没有找到任何 AI 摘要数据。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:396
+msgid "ID"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:397
+msgid "文章标题"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:398
+msgid "生成时间"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:399
+msgid "摘要内容"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:400
+msgid "状态"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:401
+msgid "操作"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:411
+msgid "未知文章"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:417
+msgid "已显示"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:419
+msgid "已关闭"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:421
+msgid "关闭"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:423
+msgid "显示"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:427
+msgid "编辑"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:429
+msgid "删除"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:474
+msgid "编辑摘要"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:480
+msgid "保存"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:481
+msgid "取消"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:115
+msgid "摘要已删除！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:117
+msgid "删除失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:134
+msgid "摘要已更新！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:136
+msgid "更新失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:143
+msgid "摘要已清空！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:145
+msgid "清空失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:148
+msgid "未找到指定的摘要！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:161
+msgid "摘要状态已更新！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:163
+msgid "状态更新失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:180
+msgid "所有文章均已生成摘要，无需操作。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:204
+msgid "成功生成 %s 条新摘要！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:206
+msgid "生成摘要成功，但保存失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:209
+msgid "没有成功生成任何摘要。请检查AI接口配置。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:221
+msgid "日志文件已成功删除！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:223
+msgid "日志文件删除失败，请检查文件权限！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:226
+msgid "日志文件不存在！"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:94
+msgid "当前正在使用 AIAbstract 插件的博客数量: %s 个。"
+msgstr ""
+
+#: includes/class-aiabstract-admin.php:96
+msgid "(此数据为匿名统计，不涉及用户隐私，每24小时更新一次。)
