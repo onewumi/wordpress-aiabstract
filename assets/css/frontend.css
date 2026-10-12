@@ -1,0 +1,244 @@
+/* ============================================================
+   AIAbstract 前端摘要样式 v2
+   版本: 1.8.0
+   主题：现代卡片 / 纸墨古风 / 流光玻璃 / 霓虹光晕
+   卡片均为亮底深字，在明暗两种博客主题下均可读。
+   ============================================================ */
+
+/* ---------- 通用 ---------- */
+.aiabstract-default-modern,
+.aiabs-theme-ink,
+.aiabs-theme-glass,
+.aiabs-theme-neon {
+    max-width: 100%;
+}
+
+/* ---------- 现代卡片（默认模板） ---------- */
+.aiabstract-default-modern {
+    margin: 1.6em auto;
+}
+
+.aiabstract-default-modern .aiabs-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, .05), 0 12px 28px rgba(15, 23, 42, .05);
+    overflow: hidden;
+}
+
+.aiabstract-default-modern .aiabs-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #f4f6ff, #edf6ff);
+    border-bottom: 1px solid #e8ecf6;
+}
+
+.aiabstract-default-modern .aiabs-badge {
+    background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 3px 12px;
+    border-radius: 20px;
+    letter-spacing: .5px;
+    box-shadow: 0 2px 6px rgba(99, 102, 241, .35);
+}
+
+.aiabstract-default-modern .aiabs-slogan {
+    color: #64748b;
+    font-size: 12.5px;
+}
+
+.aiabstract-default-modern .aiabs-body {
+    padding: 14px 18px 16px;
+}
+
+.aiabstract-default-modern .aiabs-text {
+    margin: 0;
+    line-height: 1.8;
+    color: #334155;
+    font-size: 14.5px;
+}
+
+/* ---------- 纸墨古风（template1） ---------- */
+.aiabs-theme-ink {
+    margin: 1.6em auto;
+}
+
+.aiabs-theme-ink .aiabs-card-ink {
+    background: #fdfaf2;
+    border: 1px solid #e9dcc2;
+    border-top: 3px solid #b0392b;
+    border-radius: 8px;
+    padding: 18px 22px;
+    box-shadow: 0 3px 12px rgba(122, 90, 40, .08);
+}
+
+.aiabs-theme-ink .aiabs-head-ink {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px dashed #e2d3b4;
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.aiabs-theme-ink .aiabs-stamp {
+    background: #b0392b;
+    color: #fdf6ec;
+    font-family: "Songti SC", "Noto Serif SC", "SimSun", serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 2px 10px;
+    border-radius: 3px;
+}
+
+.aiabs-theme-ink .aiabs-slogan-ink {
+    color: #8f7d5e;
+    font-family: "Songti SC", "Noto Serif SC", "SimSun", serif;
+    font-size: 13px;
+}
+
+.aiabs-theme-ink .aiabs-text-ink {
+    margin: 0;
+    color: #4b4030;
+    font-family: "Songti SC", "Noto Serif SC", "SimSun", serif;
+    line-height: 1.95;
+    font-size: 14.5px;
+}
+
+/* ---------- 流光玻璃（template2） ---------- */
+.aiabs-theme-glass {
+    position: relative;
+    margin: 1.6em auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(66, 153, 225, .18);
+}
+
+.aiabs-theme-glass .aiabs-glass-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #4299e1, #63b3ed, #76c7c8, #99dddd, #c0f3d6, #d7ffdb);
+    background-size: 400% 400%;
+    animation: aiabs-flow 14s ease infinite;
+    filter: blur(10px);
+    transform: scale(1.12);
+}
+
+.aiabs-theme-glass .aiabs-card-glass {
+    position: relative;
+    z-index: 1;
+    margin: 1.5px;
+    padding: 18px 22px;
+    background: rgba(255, 255, 255, .84);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 17px;
+}
+
+.aiabs-theme-glass .aiabs-head-glass {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px dashed rgba(100, 116, 139, .35);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.aiabs-theme-glass .aiabs-tag-glass {
+    background: linear-gradient(135deg, #1a4a6b, #2d7bb5);
+    color: #eff9ff;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.aiabs-theme-glass .aiabs-slogan-glass {
+    color: #475569;
+    font-size: 13px;
+}
+
+.aiabs-theme-glass .aiabs-text-glass {
+    margin: 0;
+    color: #1e293b;
+    line-height: 1.85;
+    font-size: 14.5px;
+}
+
+@keyframes aiabs-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- 霓虹光晕（template3） ---------- */
+.aiabs-theme-neon {
+    position: relative;
+    margin: 1.6em auto;
+    padding: 2px;
+    border-radius: 18px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 300% 300%;
+    animation: aiabs-neon-border 4s ease-in-out infinite;
+    box-shadow: 0 0 24px rgba(255, 0, 255, .25), 0 0 24px rgba(0, 255, 255, .2);
+}
+
+.aiabs-theme-neon .aiabs-card-neon {
+    background: #10131f;
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.aiabs-theme-neon .aiabs-head-neon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px dashed rgba(255, 255, 255, .16);
+    padding-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+.aiabs-theme-neon .aiabs-tag-neon {
+    background: linear-gradient(90deg, #ff00ff, #00ccff);
+    color: #fff;
+    padding: 3px 12px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    box-shadow: 0 0 12px rgba(255, 0, 255, .5);
+}
+
+.aiabs-theme-neon .aiabs-slogan-neon {
+    color: #8e92ad;
+    font-size: 13px;
+}
+
+.aiabs-theme-neon .aiabs-text-neon {
+    margin: 0;
+    color: #d9dcf2;
+    line-height: 1.85;
+    font-size: 14.5px;
+    text-shadow: 0 0 16px rgba(0, 255, 255, .2);
+}
+
+@keyframes aiabs-neon-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- 移动端 ---------- */
+@media (max-width: 600px) {
+    .aiabstract-default-modern .aiabs-head,
+    .aiabs-theme-ink .aiabs-head-ink,
+    .aiabs-theme-glass .aiabs-head-glass,
+    .aiabs-theme-neon .aiabs-head-neon {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}

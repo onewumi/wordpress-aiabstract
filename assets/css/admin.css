@@ -1,0 +1,681 @@
+/* ============================================================
+   AIAbstract 管理界面样式 v2
+   ============================================================ */
+
+/* ---------- 全局 ---------- */
+.aia-wrap {
+    max-width: 1180px;
+}
+
+.aia-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+}
+
+.aia-header h1 {
+    margin: 0;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.aia-header .aia-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #4f7cff, #8b5cf6);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .3px;
+}
+
+/* ---------- 设置页卡片体系 ---------- */
+.aia-settings {
+    display: grid;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.aia-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    overflow: hidden;
+}
+
+.aia-card-head {
+    padding: 14px 20px;
+    border-bottom: 1px solid #f0f0f1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.aia-card-head .aia-card-icon {
+    font-size: 18px;
+}
+
+.aia-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    color: #1d2327;
+}
+
+.aia-card-sub {
+    margin-left: auto;
+    color: #787c82;
+    font-size: 12px;
+}
+
+.aia-card-body {
+    padding: 4px 20px 18px;
+}
+
+.aia-field {
+    padding: 16px 0;
+    border-bottom: 1px solid #f6f7f7;
+}
+
+.aia-field:last-child {
+    border-bottom: none;
+}
+
+.aia-field-label {
+    display: block;
+    font-weight: 600;
+    font-size: 13px;
+    color: #1d2327;
+    margin-bottom: 6px;
+}
+
+.aia-field-label .aia-required {
+    color: #d63638;
+    margin-left: 2px;
+}
+
+.aia-field-desc {
+    color: #787c82;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 6px 0 0;
+}
+
+.aia-field-desc code {
+    background: #f0f6fc;
+    border: 1px solid #e0e8f0;
+    border-radius: 4px;
+    padding: 1px 5px;
+    font-size: 11px;
+}
+
+.aia-input {
+    width: 100%;
+    max-width: 640px;
+}
+
+.aia-input.tight {
+    max-width: 200px;
+}
+
+.aia-input.mono,
+.regular-text.mono {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 12.5px;
+}
+
+.aia-textarea {
+    width: 100%;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 12.5px;
+    line-height: 1.6;
+}
+
+.aia-textarea-wrap {
+    position: relative;
+}
+
+.aia-char-count {
+    text-align: right;
+    font-size: 12px;
+    color: #787c82;
+    margin-top: 4px;
+}
+
+.aia-char-count b {
+    color: #2271b1;
+}
+
+.aia-check {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    border-radius: 20px;
+    padding: 3px;
+}
+
+.aia-check label {
+    padding: 5px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #50575e;
+    user-select: none;
+}
+
+.aia-check label.on {
+    background: #2271b1;
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .15);
+}
+
+.aia-check input {
+    display: none;
+}
+
+.aia-check label:has(input:checked) {
+    background: #2271b1;
+    color: #fff;
+}
+
+/* ---------- 模板选择 ---------- */
+.aia-template-picker {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.aia-template-item {
+    border: 2px solid #e2e2e4;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+    background: #fff;
+}
+
+.aia-template-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .06);
+}
+
+.aia-template-item.selected {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1 inset, 0 4px 12px rgba(34, 113, 177, .15);
+}
+
+.aia-template-item input {
+    display: none;
+}
+
+.aia-template-item .aia-tpl-swatch {
+    height: 58px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.aia-tpl-swatch.modern {
+    background: linear-gradient(135deg, #eef2ff, #dbeafe);
+    border: 1px solid #e0e7ff;
+}
+
+.aia-tpl-swatch.modern::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    width: 4px;
+    height: 30px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, #4f7cff, #8b5cf6);
+}
+
+.aia-tpl-swatch.ink {
+    background: #faf6ef;
+    border: 1px solid #e5dccb;
+}
+
+.aia-tpl-swatch.ink::after {
+    content: 'AI';
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #b0392b;
+    color: #fdf6ec;
+    font-family: "Songti SC", "Noto Serif SC", serif;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.aia-tpl-swatch.glass {
+    background: linear-gradient(135deg, #a5c8ff, #b9e6ff, #c9f5e0);
+    border: 1px solid #cfe3f2;
+    animation:	aia-swatch-flow 6s ease infinite alternate;
+}
+
+.aia-tpl-swatch.neon {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 300% 300%;
+    border: none;
+    animation: aia-swatch-border 3s ease-in-out infinite;
+}
+
+.aia-tpl-swatch.neon::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 6px;
+    background: #171a23;
+}
+
+.aia-tpl-swatch.neon::before {
+    content: 'AI';
+    position: absolute;
+    inset: 3px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0ff;
+    font-weight: 700;
+    font-size: 14px;
+    text-shadow: 0 0 8px #0ff, 0 0 14px #f0f;
+}
+
+.aia-template-item .aia-tpl-name {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.aia-template-item .aia-tpl-desc {
+    font-size: 11px;
+    color: #787c82;
+    margin-top: 2px;
+}
+
+@keyframes aia-swatch-flow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes aia-swatch-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ---------- 保存栏 ---------- */
+.aia-save-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+    padding: 14px 0;
+}
+
+.aia-save-bar .spinner {
+    float: none;
+}
+
+/* ---------- 管理页：统计卡 ---------- */
+.aia-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    margin: 18px 0;
+}
+
+.aia-stat {
+    border-radius: 12px;
+    padding: 18px 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .08);
+}
+
+.aia-stat::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .14);
+}
+
+.aia-stat-total {
+    background: linear-gradient(135deg, #4f7cff, #6ea0ff);
+}
+
+.aia-stat-visible {
+    background: linear-gradient(135deg, #12b981, #4ade9f);
+}
+
+.aia-stat-recent {
+    background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.aia-stat .aia-stat-num {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.aia-stat .aia-stat-label {
+    font-size: 12.5px;
+    opacity: .92;
+    margin-top: 5px;
+}
+
+/* ---------- 管理页：动作区 ---------- */
+.aia-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.aia-toolbar .aiabstract-bulk-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.aia-toolbar .aia-search input[type="search"] {
+    min-width: 240px;
+    border-radius: 6px;
+}
+
+/* ---------- 管理页：面板与表格 ---------- */
+.aiabstract-panel {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .05);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.aiabstract-panel-heading {
+    background: #fff;
+    border-bottom: 1px solid #f0f0f1;
+    padding: 14px 20px;
+}
+
+.aiabstract-panel-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+.aiabstract-panel-body {
+    padding: 0;
+}
+
+.aiabstract-panel-body .wp-list-table {
+    border: none;
+}
+
+.aiabstract-panel-body .wp-list-table th {
+    background: #f8f9fb;
+    color: #50575e;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.aiabstract-panel-body .wp-list-table tbody tr {
+    transition: background .12s ease;
+}
+
+.aiabstract-panel-body .wp-list-table tbody tr:hover {
+    background: #f6faff;
+}
+
+/* 摘要预览 */
+.aiabstract-abstract-preview {
+    font-size: 12.5px;
+    color: #3c434a;
+    line-height: 1.6;
+    background: #f8f9fb;
+    border: 1px solid #eef0f3;
+    border-radius: 8px;
+    padding: 10px 12px;
+    max-width: 480px;
+    max-height: 110px;
+    overflow: hidden;
+}
+
+/* ---------- 状态徽章 ---------- */
+.aiabstract-status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    white-space: nowrap;
+}
+
+.aiabstract-status-show {
+    background: #e7f8f1;
+    color: #0a8f5f;
+    border: 1px solid #bfe9d7;
+}
+
+.aiabstract-status-hide {
+    background: #f0f0f1;
+    color: #646970;
+    border: 1px solid #dcdcde;
+}
+
+.aiabstract-status-blocked {
+    background: #fdebed;
+    color: #d63638;
+    border: 1px solid #f5c2c7;
+}
+
+/* ---------- 操作按钮 ---------- */
+.aiabstract-action-buttons {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.aiabstract-action-buttons .button {
+    border-radius: 6px;
+}
+
+/* ---------- 空状态 ---------- */
+.aiabstract-empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #787c82;
+}
+
+.aiabstract-empty-state .aia-empty-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+
+.aiabstract-empty-state p {
+    margin: 4px 0;
+}
+
+/* ---------- 分页 ---------- */
+.aiabstract-pagination {
+    margin: 18px 0 10px;
+    text-align: center;
+}
+
+.aiabstract-pagination .page-numbers {
+    display: inline-block;
+    min-width: 34px;
+    padding: 6px 10px;
+    margin: 0 3px;
+    border: 1px solid #dcdcde;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #2271b1;
+    background: #fff;
+    font-size: 13px;
+}
+
+.aiabstract-pagination .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.aiabstract-pagination .page-numbers:hover {
+    border-color: #2271b1;
+}
+
+/* ---------- 模态框 ---------- */
+#aiabstract-api-test-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .55);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    padding: 20px;
+}
+
+#aiabstract-api-test-modal .aiabstract-modal-content,
+#aiabstract-edit-modal {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .25);
+    width: 100%;
+    max-width: 560px;
+    max-height: 85vh;
+    overflow-y: auto;
+    padding: 24px 28px;
+    animation: aia-modal-in .25s ease-out;
+}
+
+#aiabstract-api-test-modal h3 {
+    margin: 0 0 16px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1d2327;
+}
+
+#aiabstract-api-test-modal .form-table th {
+    font-size: 13px;
+    width: 120px;
+}
+
+#aiabstract-api-test-modal .form-table input {
+    border-radius: 6px;
+}
+
+.aia-modal-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #f0f0f1;
+}
+
+.aia-test-result {
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.aia-test-result.aia-success {
+    background: #e7f8f1;
+    color: #0a8f5f;
+    border: 1px solid #bfe9d7;
+}
+
+.aia-test-result.aia-error {
+    background: #fdebed;
+    color: #d63638;
+    border: 1px solid #f5c2c7;
+}
+
+@keyframes aia-modal-in {
+    from { opacity: 0; transform: scale(.96) translateY(8px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ---------- API 测试与模型拉取 ---------- */
+.aia-test-status {
+    font-size: 12.5px;
+    margin-left: 10px;
+    line-height: 1.6;
+}
+
+.aia-test-status.ok {
+    color: #0a8f5f;
+}
+
+.aia-test-status.err {
+    color: #d63638;
+}
+
+.aia-test-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#aia-model-picker {
+    border-radius: 6px;
+}
+
+/* ---------- 已有兼容 ---------- */
+.wrap .page-title-action {
+    border-radius: 6px;
+}
+
+.aiabstract-admin-container {
+    margin-top: 4px;
+}
+
+/* ---------- 响应式 ---------- */
+@media (max-width: 782px) {
+    .aia-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .aia-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .aia-toolbar .aia-search input[type="search"] {
+        width: 100%;
+        min-width: 0;
+    }
+
+    #aiabstract-api-test-modal .aiabstract-modal-content {
+        padding: 18px;
+    }
+}
