@@ -1,0 +1,20 @@
+# ===== 运行时数据（各站点私有，不入库） =====
+cache/*.json
+cache/*.log
+cache/*.bak
+cache/*.tmp
+# 注意：cache/.htaccess 与 cache/index.php 是随插件分发的访问保护文件，必须入库
+
+# ===== IDE / 编辑器 =====
+.idea/
+*.iml
+.vscode/
+*.swp
+
+# ===== 构建产物 =====
+*.zip
+*.tar.gz
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
