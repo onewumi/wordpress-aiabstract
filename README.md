@@ -5,6 +5,8 @@
 
 ![Version](https://img.shields.io/badge/version-1.8.0-4f7cff) ![License](https://img.shields.io/badge/license-GPL--2.0-green) ![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-blue) ![PHP](https://img.shields.io/badge/PHP-7.4%2B-8892BF)
 
+**仓库托管**：[Gitee（主仓库）](https://gitee.com/onewumi/wordpress-aiabstract) · [GitHub（镜像）](https://github.com/onewumi/wordpress-aiabstract)
+
 ---
 
 ## ✨ 特性
@@ -26,17 +28,22 @@
 ## 📥 安装
 
 **方法一：WordPress 后台安装**
-1. 在 Gitee `Releases` 页面（或 Releases 附件）下载 `AIAbstract_v1.8.0.zip`（或克隆仓库后自行打包）
+1. 在 Releases 页面下载 `AIAbstract_v1.8.0.zip`（[Gitee Releases](https://gitee.com/onewumi/wordpress-aiabstract/releases) / [GitHub Releases](https://github.com/onewumi/wordpress-aiabstract/releases)）
 2. 后台 → 插件 → 安装插件 → 上传 ZIP → 启用
 
 **方法二：git clone**
 ```bash
 # 克隆到 wp-content/plugins/ 下，目录名保持 aiabstract 或 AIAbstract 均可
 cd wp-content/plugins/
-# HTTPS 方式（无需配置 SSH）
+
+# Gitee（国内访问快）
 git clone https://gitee.com/onewumi/wordpress-aiabstract.git aiabstract
-# 或 SSH 方式
+# 或 GitHub（海外镜像）
+git clone https://github.com/onewumi/wordpress-aiabstract.git aiabstract
+
+# 也可用 SSH 方式
 git clone git@gitee.com:onewumi/wordpress-aiabstract.git aiabstract
+git clone git@github.com:onewumi/wordpress-aiabstract.git aiabstract
 ```
 
 **环境要求**
